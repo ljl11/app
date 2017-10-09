@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include layout="@layout/fault_handling" /> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_y="120dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/position_ackground" >
+
+            <LinearLayout
+                android:id="@+id/transfer_station_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/trasfer_station_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/repair" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/trasfer_station_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="转交维修站"
+                    android:textColor="#9f9f9f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/assign_peopel_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/assign_people_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/assign_people" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/assign_people_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="指派人员"
+                    android:textColor="#9f9f9f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrange_car_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/arrange_ecar" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="申请应急车"
+                    android:textColor="#9f9f9f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_picture_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/add_image"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/add_picture" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="追加图片"
+                    android:textColor="#9f9f9f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/drag_vehicle_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/drag_vehicle"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/drag_vehicle" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/drag_vehicle_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="现场拖车"
+                    android:textColor="#9f9f9f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/trasfer_customerService_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/trasfer_customerService"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/trasfer_person" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="转交售后"
+                    android:textColor="#9f9f9f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</AbsoluteLayout>

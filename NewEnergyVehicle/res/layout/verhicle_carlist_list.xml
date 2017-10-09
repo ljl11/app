@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="#ffffff"
+    android:id="@+id/car_item"
+    android:orientation="horizontal" >
+    
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1">
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="23">
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="3.55">
+	        
+	        <TextView 
+	            android:id="@+id/car_no"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"/>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="6.45"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/driver"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/carNum"
+	            android:text="驾驶人："
+	            android:textColor="#a3a3a3"
+	            android:textSize="15dip" />
+	        
+	        <TextView
+	            android:id="@+id/driverName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#333333"
+	            android:text="张琪"
+	            android:textSize="15dip" />
+
+	        
+	        <TextView
+	            android:id="@+id/maker"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/carNum"
+	            android:layout_marginLeft="45dp"
+	            android:layout_toRightOf="@+id/driver"
+	            android:text="生产商家："
+	            android:textColor="#a3a3a3"
+	            android:textSize="15dip" />
+	        
+
+	        <TextView
+	            android:id="@+id/makerName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/carNum"
+	            android:layout_toRightOf="@+id/maker"
+	            android:textColor="#a3a3a3"
+	            android:textSize="15dip" />
+
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="8dp"
+			    android:layout_marginLeft="320dp"        
+	            android:src="@drawable/nextpage" />
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.1"
+	        android:background="#cacaca">
+	    </LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1">
+	</LinearLayout>
+</LinearLayout>

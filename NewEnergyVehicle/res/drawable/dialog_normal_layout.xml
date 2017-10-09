@@ -1,0 +1,137 @@
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:clickable="true"  
+        android:orientation="vertical"  
+        android:padding="20.0dip" >  
+      
+        <LinearLayout  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center"  
+            android:background="#ffffff"  
+            android:orientation="vertical" >  
+       <LinearLayout  
+           android:id="@+id/titleDialogLine"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:background="@drawable/dialog_bottomborder" 
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/titleDialog"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="18sp"
+                 android:textColor="#ffffff"
+                android:gravity="center" />
+
+     	 </LinearLayout>
+            <LinearLayout  
+                android:id="@+id/content"  
+                android:layout_width="fill_parent"  
+                android:layout_height="fill_parent" 
+                android:gravity="center" >
+				<TextView android:id="@+id/contentText"
+				    android:layout_marginTop="30dp"
+				    android:layout_marginBottom="30dp"
+				    android:layout_width="fill_parent"  
+                android:layout_height="fill_parent" 
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"  />
+      
+            </LinearLayout>  
+      
+            <View  
+                android:layout_width="fill_parent"  
+                android:layout_height="1dp"  
+                android:background="#cccccc" />  
+       <LinearLayout  
+           android:id="@+id/buttonDialogLine"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:weightSum="12"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true" >  
+	  
+	            <LinearLayout  
+	            android:id="@+id/negativeButton" 
+	            android:layout_width="match_parent"  
+	            android:layout_height="wrap_content"  
+	            android:layout_weight="4" 
+	          	android:weightSum="10" 
+	            android:clickable="true"  
+	              android:background="@drawable/dialog_rightborder"
+	            android:gravity="center"  
+	             android:orientation="horizontal"  
+	            android:padding="10dip"  
+	            android:saveEnabled="false" >  
+	  
+	          
+	         <TextView
+	              android:id="@+id/negativeButtonText" 
+	             android:layout_width="wrap_content"
+	             android:gravity="center"
+	             android:layout_height="50dp"
+	               android:textSize="17dp"
+	              android:layout_weight="6"
+	              android:textColor="#555555"
+	             android:layout_marginTop="1dp" />
+	        </LinearLayout>   
+	    <LinearLayout  
+	            android:id="@+id/centerButton" 
+	            android:layout_width="match_parent"  
+	            android:layout_height="wrap_content"  
+	            android:layout_weight="4" 
+	          	android:weightSum="10" 
+	            android:clickable="true"  
+	            android:gravity="center"  
+	             android:orientation="horizontal"  
+	              android:background="@drawable/dialog_rightborder"
+	            android:padding="10dip"  
+	            android:saveEnabled="false" >  
+	  
+	          
+	         <TextView
+	              android:id="@+id/centerButtonText" 
+	             android:layout_width="wrap_content"
+	             android:gravity="center"
+	             android:layout_height="50dp"
+	              android:layout_weight="6"
+	                android:textSize="17dp"
+	             android:textColor="#555555"
+	             android:layout_marginTop="1dp" />
+	        </LinearLayout>  
+	     
+	  <LinearLayout  
+	             android:id="@+id/positiveButton"
+	            android:layout_width="match_parent"  
+	            android:layout_height="wrap_content"  
+	          android:layout_weight="4" 
+	          android:weightSum="10" 
+	            android:gravity="center"  
+	             android:background="#ffffff"
+	          
+	            android:orientation="horizontal"  
+	            android:padding="10dip" >  
+	  
+	            <TextView
+	                 android:id="@+id/positiveButtonText"
+	              android:layout_width="wrap_content"
+	               android:gravity="center"
+	              android:layout_marginTop="1dp"
+	              android:textSize="17dp"
+	              android:layout_weight="6"  
+	              android:textColor="#555555"
+	             android:layout_height="50dp" />
+	        </LinearLayout>
+	    
+    	</LinearLayout>  
+             
+        </LinearLayout>  
+      
+    </FrameLayout>  

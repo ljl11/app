@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head" />
+
+        <com.example.newenergyvehicle.salesPersonnel.InnerScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/fault_info_ht"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fault_info" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_vertical"
+                            android:text="申报人    ："
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fault_applicant_ht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#666666"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_vertical"
+                            android:text="车牌号    ："
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fault_plate_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#666666"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_vertical"
+                            android:text="联系电话："
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fault_number_ht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#666666"
+                            android:textSize="15dp" />
+                        <ImageView 
+                            android:id="@+id/callPhone_ht"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/call_phone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_vertical"
+                            android:text="申报时间："
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fault_time_ht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#666666"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_vertical"
+                            android:text="维修状态："
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fault_state_ht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#666666"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:text="故障描述："
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fault_describe_ht"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#666666"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fault_picture_ht"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/picture_list_ht"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp" >
+
+                        <com.example.newenergyvehicle.salesPersonnel.HorizontalScrollViewEx
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#fff"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:id="@+id/id_gallery_ht"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </com.example.newenergyvehicle.salesPersonnel.HorizontalScrollViewEx>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/no_picture_ht"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂无图片"
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fault_history_ht"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/handling_history" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_history_emergency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff" >
+
+                        <com.example.util.refreshListView.XListView
+                            android:id="@+id/history_list_emergency"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:divider="#00000000"
+                            android:listSelector="#00000000"
+                            android:orientation="vertical"
+                            android:scrollbars="none" >
+                        </com.example.util.refreshListView.XListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_history_ht"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff" >
+
+                        <com.example.util.refreshListView.XListView
+                            android:id="@+id/history_list_ht"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:divider="#00000000"
+                            android:listSelector="#00000000"
+                            android:orientation="vertical"
+                            android:scrollbars="none" >
+                        </com.example.util.refreshListView.XListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/no_history_ht"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂无数据"
+                            android:textColor="#9f9f9f"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp" >
+
+                        <TextView
+                            android:id="@+id/maintenance_complete"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/save_button"
+                            android:gravity="center"
+                            android:text="维修完成"
+                            android:textColor="#fafdff"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/emergency_recovery_vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/text_view_border_small"
+                            android:gravity="center"
+                            android:text="回收应急车"
+                            android:textColor="#02c3ad"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.example.newenergyvehicle.salesPersonnel.InnerScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

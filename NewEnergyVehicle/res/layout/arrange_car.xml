@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="派送地点"
+            android:textColor="#9f9f9f"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/delivery_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical"
+            android:hint="请输入派送地点"
+            android:textColor="#666666"
+            android:textColorHint="#dedede"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="派送时间"
+            android:textColor="#9f9f9f"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/delivery_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:textColor="#666"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f2f5f5" />
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:text="申请原因"
+            android:textColor="#9f9f9f"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/application_reason"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:gravity="top"
+            android:textColor="#666666"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/sure_send_car"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/save_button"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#fafdff"
+            android:textSize="15dp" />
+
+</LinearLayout>

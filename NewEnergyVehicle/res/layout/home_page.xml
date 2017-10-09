@@ -1,0 +1,147 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </TabWidget>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#c5c5c5" />
+    
+    <LinearLayout
+        android:id="@+id/guid"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+		
+        <RelativeLayout
+            android:id="@+id/bar_index_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/im_home"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/bar_index"
+                android:textSize="14sp"
+                android:textColor="@color/test_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="车辆管理" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_message_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/im_phone"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:src="@drawable/bell"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/bar_message"
+                android:textSize="14sp"
+                android:textColor="@color/test_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="通知提醒" />
+
+            <ImageView
+                android:id="@+id/test_notification_potion"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/im_phone"
+                android:background="@drawable/notification_poion" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_reservation_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/im_set"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/bar_reservation"
+                android:textSize="14sp"
+                android:textColor="@color/test_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="服务查询" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_myself_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:onClick="onClick"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/my_img"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/bar_myself"
+                android:textSize="14sp"
+                android:textColor="@color/test_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="个人中心" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</TabHost>

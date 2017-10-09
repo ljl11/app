@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="选择维修站"
+            android:textSize="15dp"
+            android:textColor="#9f9f9f" />
+
+        <TextView
+            android:id="@+id/station_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="请选择维修站"
+            android:textSize="15dp"
+            android:textColorHint="#dedede"
+            android:gravity="center_vertical"
+            android:textColor="#666" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="故障描述"
+            android:textSize="15dp"
+            android:textColor="#9f9f9f" />
+
+        <EditText
+            android:id="@+id/fault_destribution_ts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="请输入故障描述"
+            android:textSize="15dp"
+            android:textColorHint="#dedede"
+            android:gravity="center_vertical"
+            android:textColor="#666" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transfer_station"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/save_button"
+        android:gravity="center"
+        android:text="确认转交"
+        android:textColor="#fafdff"
+        android:textSize="15dp" />
+
+</LinearLayout>

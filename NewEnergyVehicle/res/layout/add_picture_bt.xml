@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head"/>
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/fault_description"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请输入解决方案....."
+            android:paddingTop="8dp"
+            android:textColor="#666666"
+            android:textColorHint="#dedede"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f2f5f5" />
+    </RelativeLayout>
+    <!-- 上传图片 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <com.example.util.refreshListView.XListView
+            android:id="@+id/list_troubleInfo"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="8"
+            android:divider="#00000000"
+            android:orientation="vertical" >
+        </com.example.util.refreshListView.XListView>
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/opencamera" />
+    </LinearLayout>
+
+</LinearLayout>

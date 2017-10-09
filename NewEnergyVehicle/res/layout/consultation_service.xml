@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="#f2f5f5"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/top_picture"
+            android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:text="2017/06/05"/>
+        <TextView 
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:text="星期五"/>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.33">
+        
+
+   <com.example.util.refreshListView.XListView
+        android:id="@+id/list_consultation"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#f2f5f5"
+        android:dividerHeight="1dip"
+        android:orientation="vertical" >
+    </com.example.util.refreshListView.XListView>
+
+    <TextView
+        android:id="@+id/consult_ask"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/consult_ask"
+        android:gravity="center"
+        android:text="@string/consult_ask"
+        android:textColor="@color/encode_view" />
+
+    </RelativeLayout>
+</LinearLayout>

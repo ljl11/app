@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+	<color name="test_color">#c5c5c5</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="hot_post">#f59251</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="textColor">#999999</color>
+    <color name="patrsBGC">#F8F8F8</color>
+    <color name="text_black">#555555</color>
+    <color name="text_blue">#0084c4</color>
+    <color name="text_color_six" id="text_color_six">#666666</color>
+    <color name="text_color_b">#b9b9b9</color>
+    <color name="text_color_yellow">#f2c664</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_pass">#8eb01d</color>
+    <color name="hint_color">#cccccc</color>
+    <color name="fail">#d48423</color>
+    <color name="cutting_line">#f2f2f2</color>
+    <color name="background">#f6f6f6</color>
+    <color name="text_background">#3bbbed</color>
+    <color name="title_background">#108ced</color>
+    <color name="important_text">#fc8c1c</color>
+    <color name="back">#95b52d</color>
+    <color name="message_time">#a3a3a3</color>
+    <color name="linear_bg">#f5f5f5</color>
+    <color name="wide_divider">#f0f0f0</color>
+    
+    <color name="fontColor">#ffffff</color>
+    <color name="button">#02c3ad</color>
+    <color name="firstNavigation">#015e9e</color>
+	<color name="text_replay">#67dbce</color>
+    <color name="form_text_color_tagging">#333</color>
+    <color name="form_text_color_userName">#666</color>
+    <color name="public_anhui_color">#dddddd</color>
+    <color name="orange_font">#f59251</color>
+    <color name="yellow_font">#f6bc39</color>
+    
+    <color name="txt_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#ffc8c8c8</color>
+    <color name="bottom_bar_line">#ffe5e5e5</color>
+    <color name="bottom_bar_bg">#fff8f8f8</color>
+    <color name="blue">#17B3ED</color>
+    <color name="im_text_color">#ff999999</color>
+    <color name="im_text_color1">#00a5bb</color>
+    <color name="app_back">#F2F2F5</color>
+    <color name="text_color1">#1F363C</color>
+    <color name="text_color2">#8e8e8e</color>
+    <color name="title_back">#0094b9</color>
+
+      <!-- 整个页面背景色灰色 -->
+    <color name="background_white">#f2f5f5</color>
+    
+    <color name="noRead">#02c3ad</color>
+    <color name="isRead">#b8b8b8</color>
+    
+    <color name="colorTitle">#9f9f9f</color>
+    <color name="hint">#dedede</color>
+    <color name="layout_bg">#f2f5f5</color>
+</resources>

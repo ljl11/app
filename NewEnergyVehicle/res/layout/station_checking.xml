@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+    	android:layout_width="match_parent"
+        android:layout_height="65dp"
+    	android:background="#ffffff"
+    	android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="0dp"
+         android:layout_weight="9"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp" >
+
+        <TextView
+            android:id="@+id/plateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="维修站选择"
+            android:textColor="#02c3ad"
+            android:textSize="18sp" />                                              
+		<!-- <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_alignParentRight="true"
+          android:text="注册"
+           android:textColor="#02c3ad"
+            android:textSize="18sp" >                                                                        
+          </TextView> -->
+       </RelativeLayout>   
+       <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp" >                             
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+    </LinearLayout>
+
+    <com.example.util.refreshListView.XListView
+	        android:id="@+id/station_lv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="8.33"
+	        android:divider="#00000000"
+	        android:orientation="vertical" >
+    	</com.example.util.refreshListView.XListView>	
+</LinearLayout>

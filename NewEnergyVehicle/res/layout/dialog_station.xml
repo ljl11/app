@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:textColor="#02c3ad"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dip"
+            android:text="维修站选择"/>
+        
+        <ImageView 
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ListView 
+            android:id="@+id/station_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/Arrangement_List" >
+
+            <TextView
+                style="@style/Arrangement_List_Text1"
+                android:layout_marginLeft="15dp"
+                android:text="客户名称"
+                android:textColor="@color/colorTitle"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/car_arrangment_name"
+                style="@style/Arrangement_List_Text2"
+                android:hint="请选择客户"
+                android:textColor="@color/form_text_color_userName"
+                android:textColorHint="@color/hint"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Arrangement_List" >
+
+            <TextView
+                style="@style/Arrangement_List_Text1"
+                android:layout_marginLeft="15dp"
+                android:text="车牌号"
+                android:textColor="@color/colorTitle"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/car_arrangment_plate_number"
+                style="@style/Arrangement_List_Text2"
+                android:hint="请选择车牌号"
+                android:textColor="@color/form_text_color_userName"
+                android:textColorHint="@color/hint"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Arrangement_List" >
+
+            <TextView
+                style="@style/Arrangement_List_Text1"
+                android:layout_marginLeft="15dp"
+                android:text="派送人"
+                android:textColor="@color/colorTitle"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/car_arrangment_send_man"
+                style="@style/Arrangement_List_Text2"
+                android:hint="请选择派送人"
+                android:textColor="@color/form_text_color_userName"
+                android:textColorHint="@color/hint"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Arrangement_List" >
+
+            <TextView
+                style="@style/Arrangement_List_Text1"
+                android:layout_marginLeft="15dp"
+                android:text="派送地点"
+                android:textColor="@color/colorTitle"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/car_arrangment_place"
+                style="@style/Arrangement_List_Text2"
+                android:background="@null"
+                android:hint="请输入派送地点"
+                android:textColor="@color/form_text_color_userName"
+                android:textColorHint="@color/hint"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Arrangement_List" >
+
+            <TextView
+                style="@style/Arrangement_List_Text1"
+                android:layout_marginLeft="15dp"
+                android:text="派送时间"
+                android:textColor="@color/colorTitle"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/arrangement_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" >
+
+                <TextView
+                    android:id="@+id/car_arrangement_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请选择派送时间"
+                    android:textColor="@color/form_text_color_userName"
+                    android:textColorHint="@color/hint"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/car_arrangement_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/save_button"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#fafdff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

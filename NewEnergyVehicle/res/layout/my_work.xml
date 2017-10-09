@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="#f2f5f5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:imeOptions="actionSearch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/mywork_search"
+                android:drawableLeft="@drawable/searchpng"
+                android:drawablePadding="8dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#cacaca"
+                android:textSize="15dp"
+                android:hint="按车牌搜索" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- Search end -->
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+</LinearLayout>

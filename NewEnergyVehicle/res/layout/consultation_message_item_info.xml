@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/more_reply_username_before_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person_name"
+            android:textColor="@color/text_replay" />
+
+        <TextView
+            android:id="@+id/Landlord_louzhu"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btt"
+            android:gravity="center"
+            android:text="@string/landlord"
+            android:textColor="@color/fontColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/reply"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/more_reply_passerby_name_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_username"
+            android:textColor="@color/text_replay" />
+         <TextView
+            android:id="@+id/Landlord_load"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btt"
+            android:gravity="center"
+            android:text="@string/landlord"
+            android:textColor="@color/fontColor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/more_reply_landlord_content_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="@string/more_reply_landlord_content2"
+        android:textColor="@color/text_black"
+        android:textSize="18sp" />
+
+</LinearLayout>

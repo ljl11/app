@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_drawerlayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/id_framelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5f1ef" >
+        
+        <include layout="@layout/menu_header"/>
+        
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_linearlayout2"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="#e5f1ef"
+        android:minWidth="200dp" >
+
+        <LinearLayout
+            android:id="@+id/menu_head"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/navigation_back"
+            android:orientation="vertical"
+            android:paddingTop="30dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp" >
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/head_round" >
+
+                    <ImageView
+                        android:id="@+id/head_portrait"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/picture" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/userId"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/person_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:textColor="#abded8"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.example.util.refreshListView.XListView
+            android:id="@+id/id_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/menu_head"
+            android:dividerHeight="0dip"
+            android:divider="#ffffff"
+            android:scrollbars="none"
+            android:headerDividersEnabled="false"
+            android:paddingTop="40dp"
+            android:paddingBottom="45dp" >
+        </com.example.util.refreshListView.XListView>
+
+        <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/navigation_background" >
+
+            <TextView
+                
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_view_border"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="#02c3ad"
+                android:textSize="20sp" />
+        </RelativeLayout> -->
+    </RelativeLayout> 
+
+</android.support.v4.widget.DrawerLayout>

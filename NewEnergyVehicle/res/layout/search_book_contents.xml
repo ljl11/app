@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0">
+
+   <EditText
+       android:id="@+id/query_text_view"
+       android:layout_width="212dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_weight="0.02"
+       android:background="@drawable/border"
+       android:drawableLeft="@drawable/search"
+       android:hint="请输入车牌号"
+       android:padding="10px"
+       android:singleLine="true"
+       android:textColor="#FFFAFA" />
+
+    <TextView android:id="@+id/query_button"
+            style="@android:style/Widget.Holo.Button.Borderless.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textSize="18sp"
+            android:textColor="#3399cc"
+            android:background="#ffffff"
+            android:layout_weight="0.2"/>
+
+  </LinearLayout>
+
+
+  <ListView android:id="@+id/result_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+</LinearLayout>

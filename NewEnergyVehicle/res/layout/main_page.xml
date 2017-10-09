@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </TabWidget>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/title_back"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/bar_index_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/im_home"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/clgl" />
+
+            <TextView
+                android:id="@+id/bar_index"
+                style="@style/bottom_bar_text"
+                android:text="首页" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_message_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/im_phone"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bell" />
+
+            <TextView
+                android:id="@+id/bar_message"
+                style="@style/bottom_bar_text"
+                android:text="消息" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_reservation_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/im_set"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/searcht" />
+
+            <TextView
+                android:id="@+id/bar_reservation"
+                style="@style/bottom_bar_text"
+                android:text="预约" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_myself_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/my_img"
+                android:layout_width="@dimen/bottom_bar_icon_height"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/bar_myself"
+                style="@style/bottom_bar_text"
+                android:text="我的" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</TabHost>

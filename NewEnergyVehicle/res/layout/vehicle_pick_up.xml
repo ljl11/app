@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="车牌号"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pick_up_platenumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入车牌号"
+            android:textColor="#666666"
+            android:textColorHint="#dedede"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="接车人"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pick_up_people"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请选择接车人"
+            android:textColor="#666666"
+            android:textColorHint="#dedede"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="接车时间"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pick_up_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="请选择接车时间"
+                android:textColor="#666666"
+                android:textColorHint="#dedede"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="接车地点"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/pick_up_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入接车地点"
+            android:textColor="#666666"
+            android:textColorHint="#dedede"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="接送至"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pick_up_object"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请选择接送至..."
+            android:textColor="#666666"
+            android:textColorHint="#dedede"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f5f5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pick_up_emergency_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/save_button"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#fafdff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

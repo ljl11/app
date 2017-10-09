@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/consultation_message_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f5f5" />
+
+    <ImageView
+        android:id="@+id/consult_message_headpicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/message"
+        android:src="@drawable/consult_message_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/message_content_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="向来源神。奈何卿本佳人"
+            android:textColor="#666" />
+
+        <TextView
+            android:id="@+id/the_reply_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="第一楼"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/message_content_replywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="可以电话咨询一下。"
+            android:textColor="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/message_content_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="五小时前"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/reply_other_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="回复"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#f2f5f5" />
+
+        <com.example.util.refreshListView.XListView
+            android:id="@+id/consultation_message_itme_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+        </com.example.util.refreshListView.XListView>
+
+        <TextView
+            android:id="@+id/more_reply_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="更多回复"
+            android:textColor="@color/text_replay"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
